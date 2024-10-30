@@ -1,0 +1,426 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Fuente general para todo el cuerpo */
+    margin: 0; /* Eliminar margen predeterminado del navegador */
+    padding: 0; /* Eliminar padding predeterminado del navegador */
+}
+
+/* Cabecera y Navegación */
+header {
+    background-color: #333; /* Color de fondo de la cabecera */
+    color: #fff; /* Color del texto en la cabecera */
+    padding: 15px 0; /* Espaciado vertical en la cabecera */
+    text-align: center; /* Centrar el texto en la cabecera */
+}
+
+nav ul {
+    list-style: none; /* Eliminar los puntos de la lista */
+    padding: 0; /* Eliminar el padding de la lista */
+}
+
+nav ul li {
+    display: inline-block; /* Cambiar a inline-block para mejor control en responsividad */
+    margin: 0 10px; /* Espaciado horizontal entre los elementos de la lista */
+}
+
+nav ul li a {
+    color: #fff; /* Color del texto de los enlaces */
+    text-decoration: none; /* Eliminar el subrayado de los enlaces */
+}
+
+/* Estilos de la Introducción */
+.intro {
+    padding: 20px; /* Espaciado interno alrededor del contenido */
+    background-color: #f8f9fa; /* Color de fondo claro para la sección de introducción */
+    border-radius: 8px; /* Bordes redondeados para un aspecto más suave */
+    margin: 20px 0; /* Espaciado externo vertical para separar de otros elementos */
+}
+
+.intro h2 {
+    font-size: 1.8em; /* Tamaño de fuente para el encabezado de la introducción */
+    color: #333; /* Color del texto del encabezado */
+}
+
+.intro p {
+    color: #555; /* Color del texto del párrafo */
+    max-width: 600px; /* Ancho máximo para el párrafo, centrado en la página */
+    margin: 0 auto; /* Centrar el párrafo horizontalmente */
+    font-size: 1em; /* Tamaño de fuente para el párrafo */
+}
+
+/*Boton para ir a la reserva*/
+.reserva-boton {
+    text-align: center; /* Centra el contenido dentro de la sección */
+    margin: 20px 0; /* Espacio alrededor de la sección */
+}
+
+/* Estilo del título */
+.reserva-boton h2 {
+    font-size: 24px; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+    margin-bottom: 15px; /* Espacio debajo del título */
+}
+
+/* Estilo del botón */
+.reserva-boton button {
+    background-color: #007BFF; /* Color de fondo azul */
+    color: white; /* Color del texto en blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno (arriba-abajo, izquierda-derecha) */
+    font-size: 16px; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+.reserva-boton button:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+}
+/*=======================================*/
+/* Estilos de la Sección Servicios */
+.servicios {
+    padding: 40px 20px; /* Espaciado interno para la sección de servicios */
+}
+
+.servicios h2 {
+    font-size: 1.8em; /* Tamaño de fuente para el encabezado de la sección */
+    margin-bottom: 15px; /* Espaciado inferior para separar del contenido siguiente */
+    color: #333; /* Color del texto del encabezado */
+}
+
+.tarjetas-servicios {
+    display: grid; /* Usar un grid para organizar las tarjetas de servicio */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Crear columnas que se ajustan automáticamente */
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 20px; /* Espaciado interno para las tarjetas */
+}
+
+.tarjeta-servicio {
+    background-color: #ffffff; /* Color de fondo blanco para las tarjetas */
+    border: 1px solid #ddd; /* Borde gris claro alrededor de la tarjeta */
+    border-radius: 5px; /* Bordes redondeados para un diseño más suave */
+    padding: 15px; /* Espaciado interno para el contenido de la tarjeta */
+    text-align: center; /* Centrar el texto dentro de la tarjeta */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+}
+
+.tarjeta-servicio h3 {
+    margin: 10px 0; /* Espaciado vertical para el encabezado de la tarjeta */
+    color: #444; /* Color del texto del encabezado de la tarjeta */
+}
+
+.tarjeta-servicio p {
+    color: #666; /* Color del texto del párrafo dentro de la tarjeta */
+    font-size: 0.9em; /* Tamaño de fuente ligeramente menor para el párrafo */
+}
+/*=====================================*
+
+/* Estilos de la Sección Historia */
+.historia {
+    padding: 20px; /* Espaciado interno para la sección de historia */
+    background-color: #f5f5f5; /* Fondo claro para distinguir la sección */
+    border-radius: 8px; /* Bordes redondeados para un diseño más suave */
+    margin: 20px 0; /* Espaciado vertical entre la sección de historia y otras secciones */
+}
+
+.historia h2 {
+    font-size: 1.8em; /* Tamaño de fuente para el encabezado de la sección de historia */
+    color: #333; /* Color del texto del encabezado */
+}
+
+.historia p {
+    color: #555; /* Color del texto del párrafo dentro de la sección */
+    max-width: 600px; /* Ancho máximo para el párrafo, mejorando la legibilidad */
+    margin: 0 auto; /* Centrar el párrafo dentro de la sección */
+    font-size: 1em; /* Tamaño de fuente estándar para el texto del párrafo */
+}
+
+/*=====================================*/
+/* Estilos de la Sección Equipo */
+.equipo {
+    padding: 40px 20px; /* Espaciado interno para la sección del equipo */
+}
+
+.equipo h2 {
+    font-size: 1.8em; /* Tamaño de fuente para el encabezado de la sección del equipo */
+    margin-bottom: 15px; /* Espaciado inferior para separar el encabezado de los miembros del equipo */
+    color: #333; /* Color del texto del encabezado */
+}
+
+.tarjetas-equipo {
+    display: grid; /* Usar grid para organizar las tarjetas de los miembros del equipo */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Crear columnas flexibles que se ajustan al tamaño disponible */
+    gap: 20px; /* Espacio entre las tarjetas del equipo */
+    padding: 20px; /* Espaciado interno para el contenedor de las tarjetas */
+}
+
+.miembro-equipo {
+    background-color: #ffffff; /* Fondo blanco para cada tarjeta de miembro del equipo */
+    border: 1px solid #ddd; /* Borde gris claro alrededor de la tarjeta */
+    border-radius: 5px; /* Bordes redondeados para un diseño más suave */
+    padding: 15px; /* Espaciado interno dentro de la tarjeta */
+    text-align: center; /* Centrar el contenido de la tarjeta */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad a la tarjeta */
+}
+
+.miembro-equipo h3 {
+    margin: 10px 0; /* Espaciado superior e inferior para el nombre del miembro */
+    color: #444; /* Color del texto del nombre del miembro */
+}
+
+.miembro-equipo p {
+    color: #666; /* Color del texto del párrafo en la tarjeta del miembro */
+    font-size: 0.9em; /* Tamaño de fuente ligeramente más pequeño para la descripción */
+}
+
+/*=========================*/
+/* Sección Contacto */
+.contacto {
+    background-color: #f5f5f5; /* Fondo más claro para distinguir la sección de contacto */
+    padding: 20px; /* Espaciado interno para la sección */
+    text-align: center; /* Centrar el contenido de la sección */
+    border-top: 1px solid #ddd; /* Borde superior para separar visualmente la sección de contacto */
+}
+
+.contacto h2 {
+    font-size: 1.8em; /* Tamaño de fuente para el encabezado de la sección de contacto */
+    margin-bottom: 15px; /* Espaciado inferior para separar el encabezado del texto siguiente */
+    color: #333; /* Color del texto del encabezado */
+}
+
+.contacto p {
+    font-size: 1.1em; /* Tamaño de fuente para el párrafo en la sección de contacto */
+    color: #555; /* Color del texto del párrafo */
+}
+
+.contacto a {
+    color: #007bff; /* Color azul para los enlaces, que resalta sobre el fondo claro */
+    text-decoration: none; /* Sin subrayado en los enlaces por defecto */
+    font-weight: bold; /* Texto en negrita para los enlaces */
+}
+
+.contacto a:hover {
+    text-decoration: underline; /* Subrayar el enlace al pasar el mouse para indicar interactividad */
+}
+
+/* Contenedor principal de la galería */
+.galeria-propiedades {
+    max-width: 1200px; /* Ancho máximo del contenedor para mantener el diseño responsivo */
+    margin: 40px auto; /* Espaciado superior e inferior de 40px y centrado horizontal */
+    padding: 0 20px; /* Espaciado interno a los lados para evitar que el contenido toque los bordes */
+}
+
+/* Título principal */
+.galeria-propiedades h2 {
+    text-align: center; /* Centrar el texto del encabezado */
+    font-size: 2.2em; /* Tamaño de fuente para el encabezado principal */
+    color: #333; /* Color del texto del encabezado */
+    margin-bottom: 40px; /* Espaciado inferior para separar el encabezado del contenido siguiente */
+    position: relative; /* Posicionamiento relativo para el pseudoelemento después */
+    padding-bottom: 15px; /* Espaciado inferior adicional para el encabezado */
+}
+
+.galeria-propiedades h2:after {
+    content: ''; /* Pseudoelemento vacío para el subrayado */
+    position: absolute; /* Posicionamiento absoluto para colocar el subrayado */
+    bottom: 0; /* Ubicar el subrayado en la parte inferior del encabezado */
+    left: 50%; /* Centrar el subrayado horizontalmente */
+    transform: translateX(-50%); /* Ajustar la posición del subrayado al centro */
+    width: 100px; /* Ancho del subrayado */
+    height: 3px; /* Altura del subrayado */
+    background: linear-gradient(to right, #007bff, #00a6ff); /* Degradado del color del subrayado */
+}
+
+
+/* Propiedad destacada */
+.propiedad-actual {
+    position: relative; /* Posicionamiento relativo para el manejo de elementos hijos */
+    margin-bottom: 50px; /* Espaciado inferior para separar de otros elementos */
+    border-radius: 15px; /* Bordes redondeados */
+    overflow: hidden; /* Ocultar cualquier contenido que sobresalga */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor de la tarjeta */
+    background: #fff; /* Fondo blanco */
+    max-width: 900px; /* Ancho máximo de la propiedad */
+    margin: 0 auto 50px; /* Centrando horizontalmente y margen inferior */
+}
+
+.propiedad-actual img {
+    width: 100%; /* Imagen ocupa todo el ancho del contenedor */
+    height: 500px; /* Altura fija para la imagen */
+    object-fit: cover; /* Ajustar la imagen manteniendo la proporción */
+    transition: transform 0.3s ease; /* Efecto de transición suave al escalar */
+}
+
+.propiedad-actual:hover img {
+    transform: scale(1.05); /* Escalar la imagen al pasar el mouse */
+}
+
+.propiedad-actual h3,
+.propiedad-actual p {
+    position: absolute; /* Posicionamiento absoluto para superponer texto sobre la imagen */
+    width: 100%; /* Texto ocupa todo el ancho del contenedor */
+    padding: 20px; /* Espaciado interno alrededor del texto */
+    margin: 0; /* Sin margen adicional */
+    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.4), transparent); /* Fondo degradado para mejorar legibilidad */
+    color: #fff; /* Color del texto blanco */
+}
+
+.propiedad-actual h3 {
+    bottom: 40px; /* Posicionamiento del título hacia arriba del fondo */
+    font-size: 1.8em; /* Tamaño de fuente para el título */
+}
+
+.propiedad-actual p {
+    bottom: 0; /* Posicionar el párrafo en la parte inferior */
+    font-size: 1.1em; /* Tamaño de fuente para el párrafo */
+}
+
+/* Separador decorativo */
+.propiedad-actual:after {
+    content: ''; /* Pseudoelemento vacío para el separador */
+    display: block; /* Hacer que el separador sea un bloque */
+    width: 80%; /* Ancho del separador */
+    height: 2px; /* Altura del separador */
+    background: linear-gradient(to right, transparent, #007bff, transparent); /* Degradado del separador */
+    margin: 50px auto; /* Centrar el separador horizontalmente y margen vertical */
+}
+
+/* Lista de propiedades */
+.propiedades-lista {
+    display: grid; /* Usar un diseño de cuadrícula para la lista de propiedades */
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual ancho */
+    gap: 30px; /* Espaciado entre las tarjetas de propiedades */
+    padding: 20px 0; /* Espaciado superior e inferior para la lista */
+}
+
+.propiedad {
+    border-radius: 10px; /* Bordes redondeados para cada tarjeta de propiedad */
+    overflow: hidden; /* Ocultar cualquier contenido que sobresalga */
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor de la tarjeta */
+    transition: all 0.3s ease; /* Transición suave para todos los cambios de estado */
+    background: #fff; /* Fondo blanco para la tarjeta */
+}
+
+.propiedad:hover {
+    transform: translateY(-10px); /* Elevar la tarjeta al pasar el mouse */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); /* Aumentar la sombra al pasar el mouse */
+}
+
+.propiedad img {
+    width: 100%; /* Imagen ocupa todo el ancho del contenedor */
+    height: 250px; /* Altura fija para la imagen de la propiedad */
+    object-fit: cover; /* Ajustar la imagen manteniendo la proporción */
+    transition: transform 0.3s ease; /* Efecto de transición suave al escalar */
+}
+
+.propiedad:hover img {
+    transform: scale(1.1); /* Escalar la imagen al pasar el mouse */
+}
+
+.propiedad h3 {
+    padding: 15px; /* Espaciado interno para el título */
+    margin: 0; /* Sin margen adicional */
+    font-size: 1.3em; /* Tamaño de fuente para el título */
+    color: #333; /* Color del texto del título */
+}
+
+.propiedad p {
+    padding: 0 15px 15px; /* Espaciado interno para el párrafo */
+    margin: 0; /* Sin margen adicional */
+    color: #666; /* Color del texto del párrafo */
+    font-size: 0.95em; /* Tamaño de fuente para el párrafo */
+    line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
+}
+
+/*===============*/
+/* Estilos del Formulario de Reserva */
+.contenedor-formulario {
+    max-width: 600px;       /* Ancho máximo del formulario */
+    width: 100%;            /* Hacer que el formulario ocupe todo el ancho disponible */
+    padding: 20px;         /* Espaciado interno */
+    border: 1px solid #ccc; /* Bordes */
+    border-radius: 5px;    /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    background-color: #fff; /* Color de fondo del formulario */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espacio entre cada grupo de elementos */
+}
+
+label {
+    display: block;      /* Hace que las etiquetas ocupen toda la línea */
+    margin-bottom: 5px; /* Espacio entre la etiqueta y el input */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+select {
+    width: 100%;        /* Hacer que los campos de entrada ocupen todo el ancho disponible */
+    padding: 8px;      /* Espaciado interno */
+    border: 1px solid #ccc; /* Bordes */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+input[type="submit"] {
+    background-color: #28a745; /* Color de fondo del botón */
+    color: white;              /* Color del texto */
+    border: none;              /* Sin bordes */
+    padding: 10px 15px;       /* Espaciado interno */
+    cursor: pointer;           /* Cambia el cursor al pasar por encima */
+    border-radius: 4px;       /* Bordes redondeados */
+    width: 100%;               /* Botón ocupa todo el ancho */
+}
+
+input[type="submit"]:hover {
+    background-color: #218838; /* Color del botón al pasar el ratón */
+}
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Cambiar a bloque para el menú en pantallas pequeñas */
+        margin: 10px 0;
+    }
+
+    .tarjetas-servicios,
+    .tarjetas-equipo {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .galeria-propiedades {
+        grid-template-columns: 1fr; /* Una columna en pantallas muy pequeñas */
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    .tarjetas-servicios,
+    .tarjetas-equipo {
+        grid-template-columns: 1fr; /* Una columna en pantallas muy pequeñas */
+    }
+
+    .intro h2, .servicios h2, .historia h2, .equipo h2, .contacto h2 {
+        font-size: 1.5em; /* Ajustar tamaño de texto en pantallas pequeñas */
+    }
+
+    .intro p, .historia p, .contacto p {
+        font-size: 0.9em; /* Ajustar tamaño de texto en pantallas pequeñas */
+    }
+}
+
+/* Estilos del Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}
+
